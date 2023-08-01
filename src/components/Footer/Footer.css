@@ -1,0 +1,24 @@
+footer {
+  width: 70%;
+  height: 80px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  bottom: 0;
+  margin: 0 auto;
+  border-top: 1px solid rgba(0, 0, 0, 0.15);
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  z-index: 999;
+}
+.footer-content span {
+  margin: 0 10px;
+}
+.footer-content {
+  text-align: center;
+}
+.footer-content a {
+  text-decoration: none;
+  color: #007acd;
+}

@@ -1,0 +1,82 @@
+.homeContainer {
+  width: 70%;
+  margin: 2% auto;
+}
+.homeHeader {
+  margin: 0 10%;
+  padding: 20px;
+  text-align: left;
+}
+.homeContent {
+  width: 90%;
+  margin: 0% auto;
+  display: flex;
+}
+.homeContentLeft {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.homeContentLeft img {
+  width: 220px;
+  height: 220px;
+  border-radius: 150px;
+  object-fit: cover;
+}
+.homeContentRight {
+  flex: 1;
+}
+.homeContainer h1 {
+  margin: 0;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+.leftSperator {
+  width: 150px;
+  height: 2px;
+  margin: 15px 0px;
+  background: #055bb6;
+}
+.homeContent p {
+  margin: 15px 0;
+  text-align: justify;
+  line-height: 1.6;
+}
+.homeContentRight a {
+  text-decoration: none;
+  color: #055bb6;
+  font-weight: 600;
+}
+.homeContent a:hover {
+  text-decoration: underline;
+}
+.hrf {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 12%;
+}
+.hrf a {
+  display: flex;
+  /* align-items: center; */
+  text-decoration: none;
+  color: #055bb6;
+  font-weight: 600;
+  margin: 8px 0;
+}
+.hrf a:hover {
+  text-decoration: none;
+}
+.hrf svg {
+  display: inline-block;
+  vertical-align: middle;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+.hrf span {
+  display: inline-block;
+  vertical-align: middle;
+  padding-left: 10px;
+}

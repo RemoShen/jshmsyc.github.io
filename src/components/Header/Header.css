@@ -1,0 +1,71 @@
+header {
+  width: 70%;
+  margin: 1% auto;
+  box-sizing: border-box;
+  /* bottom line */
+  border-bottom: 2px solid rgba(0, 0, 0, 0.15);
+  z-index: 999;
+  background-color: #fff;
+}
+.menuContainer {
+  display: inline-flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-left: auto;
+}
+.menu {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 20px;
+}
+.menu li {
+  white-space: nowrap;
+  transition: all 200ms linear;
+}
+.menu li a {
+  text-decoration: none;
+  color: #000;
+  padding: 10% 10px;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  transition: all 200ms linear;
+}
+.menu li a:hover {
+  border-radius: 10px;
+  /* background-color: rgb(134, 196, 254); */
+  color: #000000;
+}
+.menu li:hover {
+  transform: scale(1.05);
+  transition: all 200ms linear;
+}
+
+.title {
+  font-family: fantasy;
+  font-size: 28px;
+}
+.title:hover {
+  cursor:default;
+}
+.active {
+  border-radius: 10px;
+  /* background-color: rgb(134, 196, 254); */
+  color: #ababab !important;
+}
+.name {
+  display: flex;
+  align-items: center;
+}
+.name h1{
+  padding: 0 20px;
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: -1px;  
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  /* font-style: italic; */
+}
