@@ -1,0 +1,46 @@
+.project-item {
+    display: flex;
+    width: 85%;
+    margin: 5px 0% 15px 7%;
+    align-items: center;
+    border: 0.5px solid #ccc;
+    padding: 0 10px;
+    cursor: pointer;
+    transition: all 0.25s;
+  }
+  .project-item:hover {
+    transform: scale(1.01);
+    transition: all 0.25s;
+  }
+  .proImg {
+    height: 120px;
+    width: 200px;
+    margin-right: 5%;
+    margin-left: 1%;
+    background-size: cover;
+    background-position: center;
+  }
+  .proInfo {
+    text-align: left;
+    margin-left: 10px;
+  }
+  .proCategory {
+    font-size: 14px;
+  }
+  .proTitle {
+    font-weight: bold;
+    margin-top: 5px;
+    letter-spacing: 0.5px;
+  }
+  .proAuthor {
+    font-size: 14px;
+    margin-top: 5px;
+  }
+  .proConf {
+    margin-top: 5px;
+    font-style: italic;
+  }
+  .proPDF {
+    margin-top: 10px;
+  }
+  

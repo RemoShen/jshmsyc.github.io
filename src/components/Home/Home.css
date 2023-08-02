@@ -27,7 +27,7 @@
 }
 .homeContentRight {
   flex: 1;
-  overflow: scroll;
+  overflow: auto;
 }
 .homeContainer h1 {
   margin: 0;
@@ -43,7 +43,7 @@
 .homeContent p {
   margin: 8px 0;
   text-align: justify;
-  line-height: 1.5;
+  line-height: 1.7;
 }
 .homeContentRight a {
   text-decoration: none;
@@ -118,5 +118,10 @@
 @media screen and (max-height: 355px) {
   .homeContentRight {
     max-height: 50px;
+  }
+}
+@media screen and (min-width: 1300px) {
+  .homeContent {
+    width: 95%;
   }
 }

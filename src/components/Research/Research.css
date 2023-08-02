@@ -13,7 +13,7 @@
   display: flex;
   flex-direction: column;
   max-height: 400px;
-  overflow: scroll;
+  overflow: auto;
 }
 .researchContainer h1 {
   margin: 0;
@@ -25,6 +25,17 @@
   height: 2px;
   margin: 15px 0px;
   background: #055bb6;
+}
+
+@media screen and (min-height: 800px) {
+  .researchContent {
+    max-height: 550px;
+  }
+}
+@media screen and (max-height: 700px) {
+  .researchContent {
+    max-height: 400px;
+  }
 }
 @media screen and (max-height: 600px) {
   .researchContent {
