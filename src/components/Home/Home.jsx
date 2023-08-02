@@ -8,7 +8,6 @@ export default function Home() {
         <h1>Personal profile</h1>
         <div className="leftSperator"></div>
       </div>
-
       <div className="homeContent">
         <div className="homeContentLeft">
           <img src={photo} alt="" />

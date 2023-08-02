@@ -1,26 +1,48 @@
 .researchContainer {
-    width: 70%;
-    margin: 0 auto;
-  }
-  .researchHeader {
-    margin: 0 10%;
-    padding: 20px;
-    text-align: left;
-  }
+  width: 70%;
+  margin: 0 auto;
+}
+.researchHeader {
+  margin: 0 10%;
+  padding: 10px;
+  text-align: left;
+}
+.researchContent {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  max-height: 400px;
+  overflow: scroll;
+}
+.researchContainer h1 {
+  margin: 0;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+.leftSperator {
+  width: 150px;
+  height: 2px;
+  margin: 15px 0px;
+  background: #055bb6;
+}
+@media screen and (max-height: 600px) {
   .researchContent {
-    width: 90%;
-    margin: 0 auto;
-    display: flex;
+    max-height: 300px;
   }
-  .researchContainer h1 {
-    margin: 0;
-    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-      "Lucida Sans", Arial, sans-serif;
+}
+@media screen and (max-height: 500px) {
+  .researchContent {
+    max-height: 200px;
   }
-  .leftSperator {
-    width: 150px;
-    height: 2px;
-    margin: 15px 0px;
-    background: #055bb6;
+}
+@media screen and (max-height: 400px) {
+  .researchContent {
+    max-height: 100px;
   }
-  
+}
+@media screen and (max-height: 300px) {
+  .researchContent {
+    display: none;
+  }
+}

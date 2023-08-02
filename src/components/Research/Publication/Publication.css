@@ -1,0 +1,45 @@
+.publication-item {
+  display: flex;
+  width: 85%;
+  margin: 5px 0% 15px 7%;
+  align-items: center;
+  border: 0.5px solid #ccc;
+  padding: 0 10px;
+  cursor: pointer;
+  transition: all 0.25s;
+}
+.publication-item:hover {
+  transform: scale(1.01);
+  transition: all 0.25s;
+}
+.pubImg {
+  height: 120px;
+  width: 200px;
+  margin-right: 5%;
+  margin-left: 1%;
+  background-size: cover;
+  background-position: center;
+}
+.pubInfo {
+  text-align: left;
+  margin-left: 10px;
+}
+.pubCategory {
+  font-size: 14px;
+}
+.pubTitle {
+  font-weight: bold;
+  margin-top: 5px;
+  letter-spacing: 0.5px;
+}
+.pubAuthor {
+  font-size: 14px;
+  margin-top: 5px;
+}
+.pubConf {
+  margin-top: 5px;
+  font-style: italic;
+}
+.pubPDF {
+  margin-top: 10px;
+}
