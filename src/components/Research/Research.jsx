@@ -2,20 +2,22 @@ import React from "react";
 import "./Research.css";
 import Project from "./Project/Project";
 import Publication from "./Publication/Publication";
-import puechase from "./purchase.png";
+import cast from "./cast.png";
+import anomaly from "./anomaly.png";
+import selector from "./selector.png";
 export default function Research() {
   const research = [
     {
-      imageUrl: puechase,
+      imageUrl: cast,
       title: "CAST2: Authoring Data-Driven Chart Animations",
       authors: ["Yuancheng Shen", "Bongshin Lee", "Yunhai Wang"],
       conference: "IEEE Transactions on Visualization and Computer Graphics",
       link: "./CAST/CAST.html",
     },
     {
-      imageUrl: puechase,
+      imageUrl: anomaly,
       title:
-        "Anomaly Detection Algorithm for Network Device Configuration based on Configuration Statement Tree.",
+        "Anomaly Detection Algorithm for Network Device Configuration based on Configuration Statement Tree",
       authors: [
         "Yuancheng Shen",
         "Rui Ban",
@@ -26,15 +28,41 @@ export default function Research() {
       conference: "Computer Science 2023",
       link: "./Anomaly/Anomaly.html",
     },
+    {
+      imageUrl: selector,
+      title: "PenTouchSelector: Selecting Elements in SVG Charts",
+      authors: [
+        // "Yuancheng Shen",
+        // "Rui Ban",
+        // "Xin Chen",
+        // "Runduo Hua",
+        // "Yunhai Wang",
+      ],
+      conference: "Working paper",
+      link: "",
+    },
+    {
+      imageUrl: anomaly,
+      title: "A Visual Grammar for Charting and Reverse Generation",
+      authors: [
+        // "Yuancheng Shen",
+        // "Rui Ban",
+        // "Xin Chen",
+        // "Runduo Hua",
+        // "Yunhai Wang",
+      ],
+      conference: "Working paper",
+      link: "",
+    },
   ];
   const projects = [
-    {
-      imageUrl: puechase,
-      title: "CAST2: Authoring Data-Driven Chart Animations",
-      authors: ["Yuancheng Shen", "Bongshin Lee", "Yunhai Wang"],
-      Company: "China Unicom & Shandong University",
-      link: "./CAST.html",
-    },
+    // {
+    //   imageUrl: cast,
+    //   title: "CAST2: Authoring Data-Driven Chart Animations",
+    //   authors: ["Yuancheng Shen", "Bongshin Lee", "Yunhai Wang"],
+    //   Company: "China Unicom & Shandong University",
+    //   link: "./CAST.html",
+    // },
   ];
   return (
     <div className="researchContainer">

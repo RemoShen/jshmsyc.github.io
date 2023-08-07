@@ -5,7 +5,9 @@ export default function Publication({ info }) {
     <div
       className="publication-item"
       onClick={() => {
-        window.location.href = info.link;
+        if (info.link !== "") {
+          window.location.href = info.link;
+        }
       }}
     >
       <div
