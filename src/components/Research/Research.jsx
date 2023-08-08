@@ -5,6 +5,7 @@ import Publication from "./Publication/Publication";
 import cast from "./cast.png";
 import anomaly from "./anomaly.png";
 import selector from "./selector.png";
+import chart from "./chart.png";
 export default function Research() {
   const research = [
     {
@@ -42,7 +43,7 @@ export default function Research() {
       link: "",
     },
     {
-      imageUrl: anomaly,
+      imageUrl: chart,
       title: "A Visual Grammar for Charting and Reverse Generation",
       authors: [
         // "Yuancheng Shen",
