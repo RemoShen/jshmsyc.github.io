@@ -11,7 +11,7 @@ export default function Research() {
     {
       imageUrl: cast,
       title: "CAST2: Authoring Data-Driven Chart Animations",
-      authors: ["Yuancheng Shen", "Bongshin Lee", "Yunhai Wang"],
+      authors: ["Yunhai Wang*", "Yuancheng Shen*","Yue Zhao", "Tong Ge", "Haoyan Shi", "Bongshin Lee"],
       conference: "IEEE Transactions on Visualization and Computer Graphics",
       link: "./CAST/CAST.html",
     },

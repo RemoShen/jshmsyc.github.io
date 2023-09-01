@@ -78,7 +78,10 @@
         >IEEE Transactions on Visualization and Computer Graphics</span
       >
       <h1>CAST2: Authoring Data-Driven Chart Animations</h1>
-      <span> <strong>Yuancheng Shen,</strong> Bongshin Lee, Yunhai Wang</span>
+      <span>
+        Yunhai Wang*, <strong>Yuancheng Shen*,</strong>Yue Zhao, Tong Ge, Haoyan
+        Shi, Bongshin Lee</span
+      >
       <div class="links">
         <a target="_blank" href="./CAST.pdf" data-v-24fdba26=""
           ><i class="el-icon" data-v-24fdba26=""
@@ -95,7 +98,7 @@
         >
         <a
           target="_blank"
-          href="https://canisstudio.github.io/CAST2/"
+          href="https://canisstudio.github.io/CAST/"
           data-v-24fdba26=""
           ><i class="el-icon" data-v-24fdba26=""
             ><svg
@@ -125,27 +128,27 @@
         </span>
       </p>
       <p class="context">
-        <strong>Figure 1</strong>: CAST2 enables the interactive construction of
+        <strong>Figure 1</strong>: CAST enables the interactive construction of
         a variety of chart animations. Its interface consists of four panels:
         (a) data panel; (b) chart panel; (c) animation panel; and (d) keyframe
         panel. In this case, the system is about halfway through the animation
         of a 'bar chart', showing the distribution of the population by gender
-        in different age groups. Please visit the CAST2's website (
+        in different age groups. Please visit the CAST's website (
         <a
-          href="https://canisstudio.github.io/CAST2"
+          href="https://canisstudio.github.io/CAST"
           style="text-decoration: none"
           target="_blank"
           color="#000000"
-          >https://canisstudio.github.io/CAST2</a
+          >https://canisstudio.github.io/CAST</a
         >) to see the animation.
       </p>
 
       <h2>Abstract</h2>
       <p class="context">
-        We present CAST, an authoring tool that enables the interactive creation
-        of chart animations. It introduces the visual specification of chart
-        animations consisting of keyframes that can be played sequentially or
-        simultaneously, and animation parameters (e.g., duration, delay).
+        We present an authoring tool, called CAST, that enables the interactive
+        creation of chart animations. It introduces the visual specification of
+        chart animations consisting of keyframes that can be played sequentially
+        or simultaneously, and animation parameters (e.g., duration, delay).
         Building on Canis, a declarative chart animation grammar that leverages
         data-enriched SVG charts, CAST supports auto-completion for constructing
         both keyframes and keyframe sequences. It also enables users to refine
@@ -155,10 +158,16 @@
         using a control panel. In addition to describing how CAST infers
         recommendations for auto-completion, we present a gallery of examples to
         demonstrate the expressiveness of CAST and a user study to verify its
-        learnability and usability. Finally, we discuss the limitations and
-        potentials of CAST as well as directions for future research.
+        learnability and usability. To improve both expressiveness and
+        usability, we present version 2.0 of CAST, which further supports the
+        animation of various types of visual marks within the same keyframe
+        group, binding data attributes to animation timing properties, and
+        consistent user interactions. Through the reproduction and discussion,
+        we demonstrate the effectiveness of the new version. Finally, we discuss
+        the limitations and potentials of CAST as well as directions for future
+        research.
       </p>
-      <h2>Canis Grammar</h2>
+      <h2>Extending Canis with Nested Selection</h2>
       <p>
         <span
           class="gatsby-resp-image-wrapper"
@@ -174,17 +183,15 @@
         </span>
       </p>
       <p class="context">
-        <strong>Figure 2</strong>: A comparative display of the Canis
-        specification, underscoring the differences between (a) the original
-        version and (d) the enhanced version integrated into CAST2.
-        Correspondingly, (b) and (e) visually represent the tree structure of
-        each specification. After compiling the specifications, the resultant
-        animation timelines are depicted at the bottom. Specifically, (c) refers
-        to the original version, which comprises three timelines, while (f)
-        represents the improved variant that consolidates the animation into a
-        single timeline.
+        <strong>Figure 2</strong>: Comparing the Canis specifications for
+        achieving the animation in Scenario 1 without (a) and with the nested
+        selection (d). (b,e) the intermediate mark-unit trees generated during
+        the compilation of the given specifications in (a,d); (c) aligning three
+        timelines corresponding to three types of visual marks requires careful
+        specification of duration and delays; whereas the one in (f) is
+        inherently represented as a linear line.
       </p>
-      <h2>Visual Specification</h2>
+      <h2>User Interface and Interaction</h2>
       <p>
         <span
           class="gatsby-resp-image-wrapper"
@@ -200,15 +207,14 @@
         </span>
       </p>
       <p class="context">
-        <strong>Figure 3</strong>: The animation of the nightingale chart within
-        CAST2. Initially, the red bars sequentially displayed from January to
-        December. The interface facilitates the binding of timing attributes or
-        the sorting of keyframes to enhance the animation control. Additionally,
-        the inclusion of hierarchical titles, which represent data attributes
-        for grouping the animation, assists users in understanding the
-        animation's organization more effectively.
+        <strong>Figure 3</strong>: The animation of the faceted dot plot within
+        CAST. The interface facilitates the sorting of keyframes to enhance the
+        animation control. Additionally, the inclusion of hierarchical headers,
+        which represent data attributes for grouping the animation, helps users
+        understand the animation's organization more effectively and provides a
+        consistent way for merging the groups.
       </p>
-      <h2>Interaction Mechanisms</h2>
+      <h2>Bi-directional Next Keyframe Selection</h2>
       <p>
         <span
           class="gatsby-resp-image-wrapper"
@@ -220,7 +226,7 @@
             max-width: 800px;
           "
         >
-          <img src="./inter.png" alt="arch" style="width: 100%" />
+          <img src="./inter.png" alt="arch" style="width: 70%" />
         </span>
       </p>
       <p class="context">
@@ -232,7 +238,7 @@
         desired next keyframe to guide the system's suggestions (b). Following
         this, the system automatically refreshes the recommendation list (c).
       </p>
-      <h2>Same-speed Animation & Sorting</h2>
+      <h2>Data-driven Timing Specification</h2>
       <p>
         <span
           class="gatsby-resp-image-wrapper"
@@ -244,7 +250,7 @@
             max-width: 800px;
           "
         >
-          <img src="./same.png" alt="arch" style="width: 100%" />
+          <img src="./same.png" alt="arch" style="width: 80%" />
         </span>
       </p>
       <p class="context">
@@ -255,6 +261,31 @@
         data attribute. Lastly, (c) illustrates linking the start time and
         duration to specific data attributes.
       </p>
+      <h2>Type-aware Keyframes Auto-completion</h2>
+      <p>
+        <span
+          class="gatsby-resp-image-wrapper"
+          style="
+            position: relative;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 800px;
+          "
+        >
+          <img src="./markunit.png" alt="arch" style="width: 60%" />
+        </span>
+      </p>
+      <p class="context">
+        <strong>Figure 6</strong>: CAST2 suggests additional marks to be
+        selected based on the user-selected multiple types of marks from the
+        input chart. Selecting (a) a label in the y-axis and one dot cell from
+        the bottom row results in the system highlighting all dots and the
+        associated label in that row (b). When (c) a label in the y-axis and a
+        dot cell from two distinct rows are chosen, the system suggests all dot
+        cells and y-axis labels (d).
+      </p>
+
       <h2>Next Keyframe Recommendation</h2>
       <p>
         <span
@@ -271,12 +302,13 @@
         </span>
       </p>
       <p class="context">
-        <strong>Figure 6</strong>: An illustrative representation of the
-        Keyframe-Tree (KF-Tree) for the mushroom animation coupled with the mark
-        selection completion process under CAST2. This combined depiction
-        demonstrates the structure and component relationships within the
-        KF-Tree, and the sequence of steps and interactions involved in the
-        completion process.
+        <strong>Figure 7</strong>: Illustrating the keyframe sequence
+        auto-completion process with CAST2. (a) The entire sequence of user
+        selection and the system's recommendation involved in authoring the
+        animation in Scenario 4, where the selected keyframe is indicated by a
+        mouse icon; (b, c) the procedure for computing the suggested next
+        keyframes, where the mark units in all recommended keyframes consist of
+        the same type of visual marks in (b) or different types in (c).
       </p>
 
       <h2>Example Gallery</h2>
@@ -296,16 +328,16 @@
       </p>
       <p class="context">
         <strong>Figure 6</strong>: Eight example chart animations demonstrating
-        the expressiveness of CAST and CAST2. We used the first seven chart
-        animations (a-g) as tasks in our user study in Section 4. In addition to
-        these, more examples can be found with the input charts, descriptions,
-        and videos illustrating the creation processes in the website (
+        the expressiveness of CAST. We used the first seven chart animations
+        (a-g) as tasks in our user study in Section 4. In addition to these,
+        more examples can be found with the input charts, descriptions, and
+        videos illustrating the creation processes in the website (
         <a
-          href="https://canisstudio.github.io/CAST2"
+          href="https://canisstudio.github.io/CAST"
           style="text-decoration: none"
           target="_blank"
           color="#000000"
-          >https://canisstudio.github.io/CAST2</a
+          >https://canisstudio.github.io/CAST</a
         >).
       </p>
     </div>

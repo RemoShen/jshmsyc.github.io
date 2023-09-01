@@ -21,7 +21,7 @@ export default function Publication({ info }) {
           {info.authors.map((author, index) => (
             <React.Fragment key={index}>
               {index > 0 && ", "}
-              {author === "Yuancheng Shen" ? (
+              {(author === "Yuancheng Shen" || author === "Yuancheng Shen*") ? (
                 <strong>{author}</strong>
               ) : (
                 <span>{author}</span>
