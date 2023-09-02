@@ -12,7 +12,7 @@ export default function Publication({ info }) {
     >
       <div
         className="pubImg"
-        style={{ backgroundImage: `url(${info.imageUrl})` }}
+        style={{ backgroundImage: `url(${info.imageUrl})`}}
       ></div>
       <div className="pubInfo">
         <div className="pubCategory">[Academic Paper]</div>
