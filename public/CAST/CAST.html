@@ -77,7 +77,7 @@
       <span class="conference"
         >IEEE Transactions on Visualization and Computer Graphics</span
       >
-      <h1>CAST2: Authoring Data-Driven Chart Animations</h1>
+      <h1>Authoring Data-Driven Chart Animations</h1>
       <span>
         Yunhai Wang*, <strong>Yuancheng Shen*,</strong>Yue Zhao, Tong Ge, Haoyan
         Shi, Bongshin Lee</span
@@ -167,31 +167,8 @@
         the limitations and potentials of CAST as well as directions for future
         research.
       </p>
-      <h2>Extending Canis with Nested Selection</h2>
-      <p>
-        <span
-          class="gatsby-resp-image-wrapper"
-          style="
-            position: relative;
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            max-width: 800px;
-          "
-        >
-          <img src="./canis.png" alt="arch" style="width: 100%" />
-        </span>
-      </p>
-      <p class="context">
-        <strong>Figure 2</strong>: Comparing the Canis specifications for
-        achieving the animation in Scenario 1 without (a) and with the nested
-        selection (d). (b,e) the intermediate mark-unit trees generated during
-        the compilation of the given specifications in (a,d); (c) aligning three
-        timelines corresponding to three types of visual marks requires careful
-        specification of duration and delays; whereas the one in (f) is
-        inherently represented as a linear line.
-      </p>
-      <h2>User Interface and Interaction</h2>
+
+      <h2>Visual Specifications</h2>
       <p>
         <span
           class="gatsby-resp-image-wrapper"
@@ -207,13 +184,45 @@
         </span>
       </p>
       <p class="context">
-        <strong>Figure 3</strong>: The animation of the faceted dot plot within
-        CAST. The interface facilitates the sorting of keyframes to enhance the
-        animation control. Additionally, the inclusion of hierarchical headers,
-        which represent data attributes for grouping the animation, helps users
-        understand the animation's organization more effectively and provides a
-        consistent way for merging the groups.
+        <strong>Figure 2</strong>: The visual representation of the animation of
+        a map showing the polio incidence rates of the United States in 1952.
+        The title fades in first, then all dots animate according to their rate
+        in an ascending order with the <strong>Circle</strong> effect. Such
+        animation is represented by two keyframe groups with other animation
+        properties including timing bars indicating delay, and iconic
+        representation of effect type and easing function (all effect types and
+        easing functions are listed at the top left).
       </p>
+
+      <h2>User Interface and Interaction</h2>
+      <p>
+        <span
+          class="gatsby-resp-image-wrapper"
+          style="
+            position: relative;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 800px;
+          "
+        >
+          <img src="./inter.png" alt="arch" style="width: 100%" />
+        </span>
+      </p>
+      <p class="context">
+        <strong>Figure 3</strong>: An example illustrating the keyframe and
+        keyframe sequence construction procedure. (a) a mark unit with four blue
+        dots is dragged over the dropzone ahead of the keyframe group containing
+        all dots; (b) after creating a keyframe for the selected dots, a list of
+        possible next keyframes is suggested, which can also be bidirectionally
+        selected from the chart panel to help users to find the desired next
+        keyframe; (c) dragging one keyframe to make keyframes animate a short
+        time after the previous one started; (d) binding the timing to the start
+        time or duration of the keyframes or rearranging the animation order of
+        sibling keyframe groups; (e) selecting effect type for keyframe group;
+        and (f) two ways to update the duration length.
+      </p>
+
       <h2>Bi-directional Next Keyframe Selection</h2>
       <p>
         <span
@@ -226,7 +235,7 @@
             max-width: 800px;
           "
         >
-          <img src="./inter.png" alt="arch" style="width: 70%" />
+          <img src="./bid.png" alt="arch" style="width: 70%" />
         </span>
       </p>
       <p class="context">
@@ -257,7 +266,8 @@
         <strong>Figure 5</strong>: A visual demonstration of how to adjust
         timing attributes within CAST2. Specifically, (a) displays the
         foundational data table used for creating the Gantt chart. Then, (b)
-        shows the process of arranging the keyframes by utilizing the ``Total''
+        shows the process of arranging the keyframes by utilizing the
+        <strong>Total</strong>
         data attribute. Lastly, (c) illustrates linking the start time and
         duration to specific data attributes.
       </p>
@@ -273,17 +283,21 @@
             max-width: 800px;
           "
         >
-          <img src="./markunit.png" alt="arch" style="width: 60%" />
+          <img src="./markunit.png" alt="arch" style="width: 40%" />
         </span>
       </p>
       <p class="context">
-        <strong>Figure 6</strong>: CAST2 suggests additional marks to be
-        selected based on the user-selected multiple types of marks from the
-        input chart. Selecting (a) a label in the y-axis and one dot cell from
-        the bottom row results in the system highlighting all dots and the
-        associated label in that row (b). When (c) a label in the y-axis and a
-        dot cell from two distinct rows are chosen, the system suggests all dot
-        cells and y-axis labels (d).
+        <strong>Figure 6</strong>: CAST suggests additional marks to be selected
+        based on the user-selected multiple types of marks from the input chart.
+        In the original version, once (a) two dot cells in blue from different
+        rows are selected, the system suggests (b) all dot cells in the blue
+        color based on the same and different attribute values. In the newer
+        version, selecting (c) a label in the y-axis and one dot cell from the
+        bottom row results in the system highlighting (d) all dots and the
+        associated label in that row by using the type names of the selected
+        marks. When (e) a label in the y-axis and a dot cell from two distinct
+        rows are chosen, the system suggests (f) all dot cells and y-axis
+        labels.
       </p>
 
       <h2>Next Keyframe Recommendation</h2>
@@ -310,7 +324,30 @@
         keyframes, where the mark units in all recommended keyframes consist of
         the same type of visual marks in (b) or different types in (c).
       </p>
-
+      <h2>Nested Selection with Canis</h2>
+      <p>
+        <span
+          class="gatsby-resp-image-wrapper"
+          style="
+            position: relative;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 800px;
+          "
+        >
+          <img src="./canis.png" alt="arch" style="width: 100%" />
+        </span>
+      </p>
+      <p class="context">
+        <strong>Figure 8</strong>: Comparing the Canis specifications for
+        achieving the animation in Scenario 1 without (a) and with the nested
+        selection (d). (b,e) the intermediate mark-unit trees generated during
+        the compilation of the given specifications in (a,d); (c) aligning three
+        timelines corresponding to three types of visual marks requires careful
+        specification of duration and delays; whereas the one in (f) is
+        inherently represented as a linear line.
+      </p>
       <h2>Incremental Compiling</h2>
       <p>
         <span
@@ -327,7 +364,7 @@
         </span>
       </p>
       <p class="context">
-        <strong>Figure 8</strong>: The illustration of an incremental
+        <strong>Figure 9</strong>: The illustration of an incremental
         compilation for the modified specification with the input chart in (a).
         (b) The original specification (left) and the resulted two-level
         mark-unit tree (right); (c) the modified specification where the changed
@@ -351,7 +388,7 @@
         </span>
       </p>
       <p class="context">
-        <strong>Figure 9</strong>: An example illustrating how the keyframe
+        <strong>Figure 10</strong>: An example illustrating how the keyframe
         sequence is changed with semantic zooming on different zoom levels. We
         present this keyframe sequence on three zoom levels since it shows the
         same number of keyframes or keyframe groups under level 6, while the
@@ -375,7 +412,7 @@
         </span>
       </p>
       <p class="context">
-        <strong>Figure 10</strong>: Eight example chart animations demonstrating
+        <strong>Figure 11</strong>: Eight example chart animations demonstrating
         the expressiveness of CAST. We used the first seven chart animations
         (a-g) as tasks in our user study in Section 4. In addition to these,
         more examples can be found with the input charts, descriptions, and

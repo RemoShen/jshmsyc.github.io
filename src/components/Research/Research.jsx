@@ -6,12 +6,20 @@ import cast from "./cast.png";
 import anomaly from "./anomaly.png";
 import selector from "./selector.png";
 import chart from "./chart.png";
+import gen from "./gen.png";  
 export default function Research() {
   const research = [
     {
       imageUrl: cast,
-      title: "CAST2: Authoring Data-Driven Chart Animations",
-      authors: ["Yunhai Wang*", "Yuancheng Shen*","Yue Zhao", "Tong Ge", "Haoyan Shi", "Bongshin Lee"],
+      title: "Authoring Data-Driven Chart Animations",
+      authors: [
+        "Yunhai Wang*",
+        "Yuancheng Shen*",
+        "Yue Zhao",
+        "Tong Ge",
+        "Haoyan Shi",
+        "Bongshin Lee",
+      ],
       conference: "IEEE Transactions on Visualization and Computer Graphics",
       link: "./CAST/CAST.html",
     },
@@ -30,6 +38,19 @@ export default function Research() {
       link: "./Anomaly/Anomaly.html",
     },
     {
+      imageUrl: chart,
+      title: "Exploring SVG Markup Standards for Enhanced Data Visualization",
+      authors: [
+        // "Yuancheng Shen",
+        // "Rui Ban",
+        // "Xin Chen",
+        // "Runduo Hua",
+        // "Yunhai Wang",
+      ],
+      conference: "Working paper",
+      link: "",
+    },
+    {
       imageUrl: selector,
       title: "PenTouchSelector: Selecting Elements in SVG Charts",
       authors: [
@@ -43,7 +64,7 @@ export default function Research() {
       link: "",
     },
     {
-      imageUrl: chart,
+      imageUrl: gen,
       title: "A Visual Grammar for Charting and Reverse Generation",
       authors: [
         // "Yuancheng Shen",
