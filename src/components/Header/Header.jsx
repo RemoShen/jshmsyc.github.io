@@ -14,12 +14,12 @@ export default function Header() {
           <li>
             <NavLink to="/research">RESEARCH</NavLink>
           </li>
-          <li>
+          {/* <li>
             <NavLink to="/blog">BLOG</NavLink>
           </li>
           <li>
             <NavLink to="/about">ABOUT ME</NavLink>
-          </li>
+          </li> */}
         </ul>
       </div>
     </header>
