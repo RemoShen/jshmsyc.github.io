@@ -79,12 +79,12 @@
       >
       <h1>Authoring Data-Driven Chart Animations</h1>
       <span>
-        Yunhai Wang*, <strong>Yuancheng Shen*,</strong>Yue Zhao, Tong Ge, Haoyan
-        Shi, Bongshin Lee</span
+        <strong>Yuancheng Shen, </strong>Yue Zhao, Tong Ge, Haoyan Shi, Bongshin
+        Lee, Yunhai Wang</span
       >
       <div class="links">
         <a>
-        <!-- target="_blank" href="./CAST.pdf" data-v-24fdba26="" -->
+          <!-- target="_blank" href="./CAST.pdf" data-v-24fdba26="" -->
           <i class="el-icon" data-v-24fdba26=""
             ><svg
               viewBox="0 0 1024 1024"
@@ -99,7 +99,7 @@
         >
         <a
           target="_blank"
-          href="https://canisstudio.github.io/CAST/"
+          href="https://canisstudio.github.io/CASTPlus/"
           data-v-24fdba26=""
           ><i class="el-icon" data-v-24fdba26=""
             ><svg
@@ -129,44 +129,43 @@
         </span>
       </p>
       <p class="context">
-        <strong>Figure 1</strong>: CAST enables the interactive construction of
+        <strong>Figure 1</strong>: CAST+ enables the interactive construction of
         a variety of chart animations. Its interface consists of four panels:
         (a) data panel; (b) chart panel; (c) animation panel; and (d) keyframe
         panel. In this case, the system is about halfway through the animation
         of a 'bar chart', showing the distribution of the population by gender
-        in different age groups. Please visit the CAST's website (
+        in different age groups. Please visit the CAST+'s website (
         <a
-          href="https://canisstudio.github.io/CAST"
+          href="https://canisstudio.github.io/CASTPlus"
           style="text-decoration: none"
           target="_blank"
           color="#000000"
-          >https://canisstudio.github.io/CAST</a
+          >https://canisstudio.github.io/CASTPlus</a
         >) to see the animation.
       </p>
 
       <h2>Abstract</h2>
       <p class="context">
-        We present an authoring tool, called CAST, that enables the interactive
-        creation of chart animations. It introduces the visual specification of
-        chart animations consisting of keyframes that can be played sequentially
-        or simultaneously, and animation parameters (e.g., duration, delay).
-        Building on Canis, a declarative chart animation grammar that leverages
-        data-enriched SVG charts, CAST supports auto-completion for constructing
-        both keyframes and keyframe sequences. It also enables users to refine
-        the animation specification (e.g., aligning keyframes across tracks to
-        play them together, adjusting delay) with direct manipulation and other
-        parameters for animation effects (e.g., animation type, easing function)
-        using a control panel. In addition to describing how CAST infers
-        recommendations for auto-completion, we present a gallery of examples to
-        demonstrate the expressiveness of CAST and a user study to verify its
-        learnability and usability. To improve both expressiveness and
-        usability, we present version 2.0 of CAST, which further supports the
-        animation of various types of visual marks within the same keyframe
-        group, binding data attributes to animation timing properties, and
-        consistent user interactions. Through the reproduction and discussion,
-        we demonstrate the effectiveness of the new version. Finally, we discuss
-        the limitations and potentials of CAST as well as directions for future
-        research.
+        We present an authoring tool, called CAST+ (Canis Studio Plus), that
+        enables the interactive creation of chart animations. It introduces the
+        visual specification of chart animations consisting of keyframes that
+        can be played sequentially or simultaneously, and animation parameters
+        (e.g., duration, delay). Building on Canis, a declarative chart
+        animation grammar that leverages data-enriched SVG charts, CAST+
+        supports auto-completion for constructing both keyframes and keyframe
+        sequences. It also enables users to refine the animation specification
+        (e.g., aligning keyframes across tracks to play them together, adjusting
+        delay) with direct manipulation and other parameters for animation
+        effects (e.g., animation type, easing function) using a control panel.
+        We report a user study conducted to assess the visual specification and
+        system usability with its initial version. We enhanced the system's
+        expressiveness and usability: CAST+ now supports the animation of
+        multiple types of visual marks in the same keyframe group and the
+        binding of data attributes to animation timing properties, and provides
+        more consistent user interactions. We present a gallery of examples and
+        four usage scenarios to demonstrate the expressiveness of CAST+.
+        Finally, we discuss the limitations, comparison, and potentials of CAST+
+        as well as directions for future research.
       </p>
 
       <h2>Visual Specifications</h2>
@@ -212,19 +211,20 @@
       </p>
       <p class="context">
         <strong>Figure 3</strong>: An example illustrating the keyframe and
-        keyframe sequence construction procedure. (a) a mark unit with four blue
-        dots is dragged over the dropzone ahead of the keyframe group containing
-        all dots; (b) after creating a keyframe for the selected dots, a list of
-        possible next keyframes is suggested, which can also be bidirectionally
-        selected from the chart panel to help users to find the desired next
-        keyframe; (c) dragging one keyframe to make keyframes animate a short
-        time after the previous one started; (d) binding the timing to the start
-        time or duration of the keyframes or rearranging the animation order of
-        sibling keyframe groups; (e) selecting effect type for keyframe group;
-        and (f) two ways to update the duration length.
+        keyframe sequence construction procedure. (a) a tick label is dragged over the dropzone ahead of the keyframe
+        group containing visual marks; (b) after creating a keyframe for the
+        selected label, a list of possible next keyframes is suggested to let
+        the author select to complete the keyframe sequence; (c) dragging one
+        keyframe to make keyframes animate a short time after the previous one
+        started; (d) binding quantitative data attributes to the start time or
+        duration of the keyframes and rearranging the animation order of sibling
+        keyframe groups; (e) selecting effect type for keyframe group; and (f)
+        two ways to update the duration length.
       </p>
 
-      <h2>Bi-directional Next Keyframe Selection</h2>
+      <h2>
+        Linked interactions between suggested keyframes and the chart panel
+      </h2>
       <p>
         <span
           class="gatsby-resp-image-wrapper"
@@ -241,7 +241,7 @@
       </p>
       <p class="context">
         <strong>Figure 4</strong>: Illustration of the user interaction workflow
-        in CAST2, highlighting the sequence of steps and interactions involved
+        in CAST+, highlighting the sequence of steps and interactions involved
         in crafting an animation. Initially, the system presents potential next
         keyframes to the user, enabling a preview of the suggestion by hovering
         over it (a). Subsequently, the user can select specific marks within the
@@ -265,7 +265,7 @@
       </p>
       <p class="context">
         <strong>Figure 5</strong>: A visual demonstration of how to adjust
-        timing attributes within CAST2. Specifically, (a) displays the
+        timing attributes within CAST+. Specifically, (a) displays the
         foundational data table used for creating the Gantt chart. Then, (b)
         shows the process of arranging the keyframes by utilizing the
         <strong>Total</strong>
@@ -318,7 +318,7 @@
       </p>
       <p class="context">
         <strong>Figure 7</strong>: Illustrating the keyframe sequence
-        auto-completion process with CAST2. (a) The entire sequence of user
+        auto-completion process with CAST+. (a) The entire sequence of user
         selection and the system's recommendation involved in authoring the
         animation in Scenario 4, where the selected keyframe is indicated by a
         mouse icon; (b, c) the procedure for computing the suggested next

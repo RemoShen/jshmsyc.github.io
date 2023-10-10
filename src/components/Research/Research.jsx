@@ -13,12 +13,12 @@ export default function Research() {
       imageUrl: cast,
       title: "Authoring Data-Driven Chart Animations",
       authors: [
-        "Yunhai Wang*",
-        "Yuancheng Shen*",
+        "Yuancheng Shen",
         "Yue Zhao",
         "Tong Ge",
         "Haoyan Shi",
         "Bongshin Lee",
+        "Yunhai Wang",
       ],
       conference: "IEEE Transactions on Visualization and Computer Graphics",
       link: "./CAST/CAST.html",
@@ -63,19 +63,19 @@ export default function Research() {
       conference: "Working paper",
       link: "",
     },
-    {
-      imageUrl: gen,
-      title: "A Visual Grammar for Charting and Reverse Generation",
-      authors: [
-        // "Yuancheng Shen",
-        // "Rui Ban",
-        // "Xin Chen",
-        // "Runduo Hua",
-        // "Yunhai Wang",
-      ],
-      conference: "Working paper",
-      link: "",
-    },
+    // {
+    //   imageUrl: gen,
+    //   title: "A Visual Grammar for Charting and Reverse Generation",
+    //   authors: [
+    //     // "Yuancheng Shen",
+    //     // "Rui Ban",
+    //     // "Xin Chen",
+    //     // "Runduo Hua",
+    //     // "Yunhai Wang",
+    //   ],
+    //   conference: "Working paper",
+    //   link: "",
+    // },
   ];
   const projects = [
     // {
