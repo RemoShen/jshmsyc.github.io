@@ -14,10 +14,10 @@ export default function Header() {
           <li>
             <NavLink to="/research">RESEARCH</NavLink>
           </li>
-          {/* <li>
-            <NavLink to="/blog">BLOG</NavLink>
-          </li>
           <li>
+            <NavLink to="/blog">Application Materials</NavLink>
+          </li>
+          {/* <li>
             <NavLink to="/about">ABOUT ME</NavLink>
           </li> */}
         </ul>

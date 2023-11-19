@@ -74,7 +74,7 @@ export default function Home() {
               </svg>
               <span>CV</span>
             </a>
-            <a
+            {/* <a
               href="./RS/RS.html"
               target="_blank"
               rel="noopener noreferrer"
@@ -89,7 +89,7 @@ export default function Home() {
                 <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2zm10-1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1z"></path>
               </svg>
               <span>Personal Statement</span>
-            </a>
+            </a> */}
           </section>
         </div>
         <div className="homeContentRight">
