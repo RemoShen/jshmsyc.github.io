@@ -15,7 +15,7 @@ export default function Header() {
             <NavLink to="/research">RESEARCH</NavLink>
           </li>
           <li>
-            <NavLink to="/blog">Application Materials</NavLink>
+            <NavLink to="/application">Application Materials</NavLink>
           </li>
           {/* <li>
             <NavLink to="/about">ABOUT ME</NavLink>

@@ -1,0 +1,40 @@
+.applicationContainer {
+  width: 70%;
+  margin: 0 auto;
+}
+.applicationHeader {
+  margin: 0 10%;
+  padding: 10px;
+  text-align: left;
+}
+.applicationContent {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+}
+.applicationContainer h1 {
+  margin: 0;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+.leftSperator {
+  width: 150px;
+  height: 2px;
+  margin: 15px 0px;
+  background: #055bb6;
+}
+
+.ListTitle {
+  font-family:sans-serif;
+  font-size: 25px;
+  font-weight: 600;
+}
+.listproject{
+  margin-top: 20px;
+}
+.link{
+  margin-left: 10px;
+  text-decoration: none;
+  color: rgb(12, 128, 210);
+  font-size: 25px;
+}
