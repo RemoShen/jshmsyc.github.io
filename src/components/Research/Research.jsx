@@ -37,19 +37,19 @@ export default function Research() {
       conference: "Computer Science 2023",
       link: "./Anomaly/Anomaly.html",
     },
-    {
-      imageUrl: chart,
-      title: "Exploring SVG Markup Standards for Enhanced Data Visualization",
-      authors: [
-        // "Yuancheng Shen",
-        // "Rui Ban",
-        // "Xin Chen",
-        // "Runduo Hua",
-        // "Yunhai Wang",
-      ],
-      conference: "Working paper",
-      link: "",
-    },
+    // {
+    //   imageUrl: chart,
+    //   title: "Exploring SVG Markup Standards for Enhanced Data Visualization",
+    //   authors: [
+    //     // "Yuancheng Shen",
+    //     // "Rui Ban",
+    //     // "Xin Chen",
+    //     // "Runduo Hua",
+    //     // "Yunhai Wang",
+    //   ],
+    //   conference: "Working paper",
+    //   link: "",
+    // },
     {
       imageUrl: selector,
       title: "PenTouchSelector: Selecting Elements in SVG Charts",
